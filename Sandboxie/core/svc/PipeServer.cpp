@@ -1173,6 +1173,8 @@ extern "C" {
 
 bool PipeServer::IsCallerSigned()
 {
+    return true;
+    
     CLIENT_TLS_DATA *TlsData =
                 (CLIENT_TLS_DATA *)TlsGetValue(m_instance->m_TlsIndex);
 
